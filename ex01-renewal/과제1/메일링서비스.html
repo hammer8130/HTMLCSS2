@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>서비스 가입</title>
+
+</head>
+
+<body>
+    <h1>회원 가입</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>환영합니다</legend>
+            <label for="name">이름 : </label>
+            <input type="text" name="name" id="name" required /><br>
+            <label for="email">메일 : </label>
+            <input type="email" name="email" id="email" required />
+            <input type="button" name="mb" id="mb" value="메일인증"> <br>
+            <label for="password">비밀번호 : </label>
+            <input type="password" name="password" id="password" required /> <br>
+            <label for="password_confirm">비밀번호 확인 :</label>
+            <input type="password" name="password_confirm" id="password_confirm" required /> <br> <br>
+        
+            <label>휴대전화 :</label>
+            <select name="telecom">
+                <option value="010" selected>010</option>
+                <option value="011" selected>011</option>
+                <option value="012" selected>012</option>
+                <option value="070" selected>070</option>
+            </select>
+           
+            <label for="text">-</label>
+            <input type="tel" name="p1" id="p1" size="3px">
+            <label for="text">-</label>
+            <input type="tel" name="p2" id="p2" size="3px">
+            <input type="button" name="hp" id="hp" value="휴대전화인증"> <br>
+            <label>통신사:</label>
+            <select name="telecom">
+                <option value="S" selected>SKT</option>
+                <option value="K" selected>KT</option>
+                <option value="L" selected>LG</option>
+                <option value="E">기타</option>
+            </select><br>
+            <label for="text">인증번호 : </label>
+            <input type="text" name="phone" id="phone">
+            <br><br>
+            <input type="submit" value="가입하기" />
+            <input type="reset" value="다시 작성" />
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>
