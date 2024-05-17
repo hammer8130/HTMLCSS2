@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* External CSS 주석 */
+h1 {
+    font-size: 5em;
+    color: hotpink;
+    background-color: skyblue;
+}
