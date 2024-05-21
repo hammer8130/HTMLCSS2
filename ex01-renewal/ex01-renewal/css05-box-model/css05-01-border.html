@@ -3,6 +3,65 @@
 
 <head>
     <title>CSS Border 실습</title>
+    <style>
+         .solid-border {
+            border-width: 5px;
+            border-style: solid;
+            border-color: hotpink;
+            margin-bottom: 10px;
+            padding: 10px;
+            /* 한번에 부여 : width style color */
+            /* border: 2px solid hotpink; */
+         }
+         .dashed-border{
+            border-width: 5px;
+            border-style: dashed;
+            border-color: blue;
+            margin-bottom: 10px;
+            padding: 10px;
+         }
+         .dotted-border{
+            border-width: 5px;
+            border-style: dotted;
+            border-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 10px;
+         }
+         .double-border{
+            border-width: 5px;
+            border-style: double;
+            border-color: yellowgreen;
+            margin-bottom: 10px;
+            padding: 10px;
+         }
+         .groove-border{
+            border-width: 5px;
+            border-style: groove;
+            border-color: cyan;
+            margin-bottom: 10px;
+            padding: 10px;
+         }
+
+        img.round{
+            /* 테두리 개별 값 적용 */
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 40px; */
+
+            /* 값 4개 테두리 한꺼번에 적용 */
+            /* border-radius: 10px 20px 30px 40px; */
+        
+            /* 값 2개 top-left bottom-right // top-right bottom-left */
+            /* border-radius: 10px 50px; */
+
+            /* 값 1개: 모든 테두리 공통 적용 */
+            border-radius: 20%;
+        } 
+        img{
+            width: 250px;
+        } 
+    </style>
 </head>
 
 <body>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position Example</title>
+<style>
+    .container{
+        border: 2px solid;
+        height: 100px;
+        margin-top: 50px;
+
+        /* 기준점 설정 */
+        position: relative;
+
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        
+    }
+    div.box{
+        width: 100px;
+        height: 100px;
+        /* 좌표계를 absolute로 변경 */
+        position: absolute;
+    }
+    .container >:first-child{
+        background-color: skyblue;
+        border: 2px solid black;
+        left: 10px;
+        top: 10px;
+    }
+    .container :nth-child(2){
+        background-color: orange;
+        border: 2px solid black;
+        left: 50px;
+        top: 50px;
+        /* 클수록 앞으로 나온다. 작으면 뒤쪽으로 밀린다. */
+        z-index: 10;
+    }
+    .container :last-child{
+        background-color: greenyellow;
+        border: 2px solid black;
+        left: 90px;
+        top: 90px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
